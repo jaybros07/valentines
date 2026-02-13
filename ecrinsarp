@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Ecrin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        /* Arkaplan: Beyaz ve Toz Pembe Geçişli */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ffffff 0%, #ffdee9 100%);
+            font-family: 'Poppins', sans-serif;
+            overflow: hidden;
+        }
+
+        /* Merkez Kart */
+        .card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 50px 40px;
+            border-radius: 30px; /* Yuvarlatılmış köşeler */
+            box-shadow: 0 10px 30px rgba(255, 182, 193, 0.4);
+            text-align: center;
+            border: 2px solid #fff;
+            max-width: 90%;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Yazı Stili */
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            color: #d63384;
+            font-size: 3rem;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        /* Küçük Kalp Animasyonu */
+        .heart {
+            color: #ff4d6d;
+            font-size: 2rem;
+            margin-top: 20px;
+            animation: beat 1.2s infinite;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes beat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Will you be my valentine Ecrin?</h1>
+        <div class="heart">❤</div>
+    </div>
+
+</body>
+</html>
